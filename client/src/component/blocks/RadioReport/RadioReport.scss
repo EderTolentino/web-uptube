@@ -1,0 +1,63 @@
+.RadioReport {
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  .report-video {
+    padding: 10px;
+
+    .radio:hover {
+      color: red;
+    }
+
+    .radio {
+      margin-bottom: 3px;
+
+    }
+  }
+
+  .send_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+
+    p {
+
+    }
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+
+      .cancel {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        padding: 0 15px;
+        border-radius: 15px;
+        margin: 0 15px;
+        background-color: red;
+      }
+
+      .cancel:hover {
+        background-color: grey;
+      }
+
+      .send {
+        height: 35px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+  }
+
+}
