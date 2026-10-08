@@ -1,0 +1,23 @@
+.LikeDislike {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .image {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+
+    img:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .separator {
+    margin: 0 15px;
+  }
+}
