@@ -1,0 +1,141 @@
+.Comment {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 20px;
+
+  .photo:hover {
+    cursor: pointer;
+  }
+
+  .photo {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .data {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+
+    .channel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 0;
+
+      .name {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        .date {
+          color: #575762;
+          margin-left: 15px;
+        }
+      }
+
+      .edit_button:hover {
+        cursor: pointer;
+        background-color: #1c1c24;
+      }
+
+      .edit_button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        .menu-btn {
+          width: 23.5px;
+          height: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .wrapper-edit-comment:hover {
+          cursor: pointer;
+        }
+
+        .wrapper-edit-comment {
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          left: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .delete_edit:hover {
+            cursor: pointer;
+          }
+
+          .delete_edit {
+            width: 120px;
+            height: 106px;
+            padding: 5px;
+            position: absolute;
+            top: calc(50vh - 53px);
+            right: calc(50vw - 60px);
+            background-color: grey;
+            z-index: 50;
+          }
+
+          .cancel, .delete, .edit {
+            height: 30px;
+            margin: 2px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: red;
+          }
+
+          .cancel {
+            background-color: #0d6efd;
+          }
+
+          .delete {
+            background-color: red;
+          }
+
+          .edit {
+            background-color: orangered;
+          }
+
+        }
+
+
+
+
+      }
+
+
+
+
+
+    }
+
+    .comment {
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.container_add_comment {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 20px;
+
+  .photo:hover {
+    cursor: pointer;
+  }
+
+  .photo {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .comment_form {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+
+    .comment_area {
+
+      textarea {
+        background-color: #1c1c24;
+        height: 100px;
+        border: none;
+        color: white;
+      }
+
+    }
+
+    .send_area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+
+      p {
+
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .cancel {
+          display: flex;
+          align-items: center;
+          height: 35px;
+          padding: 0 15px;
+          border-radius: 15px;
+          margin: 0 15px;
+        }
+
+        .cancel:hover {
+          background-color: grey;
+        }
+
+        .send {
+          height: 35px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

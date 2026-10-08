@@ -1,0 +1,19 @@
+.BackofficeTags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tag-name {
+    padding: 5px;
+    background-color: #0d6efd;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .delete-tag {
+    padding: 5px;
+    background-color: blue;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
