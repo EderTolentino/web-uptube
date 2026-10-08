@@ -1,0 +1,198 @@
+.App .Profile {
+    display: flex;
+    width: 100%;
+    background-color: #13131a;
+    font-size: 0.8em;
+
+    .main {
+        width: calc(100% - 20px);
+        margin: 10px;
+
+        .CoverProfile {
+            width: 100%;
+
+            .cover-box {
+                .pencil-edit {
+                    width: 90px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: 1px solid white;
+                    border-radius: 15px;
+                    font-size: 0.8em;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 5px;
+                }
+            }
+        }
+
+        .description {
+            .videos {
+                margin-top: 10px;
+
+                .title {
+
+                }
+
+                .value {
+                    font-size: large;
+                    font-weight: bold;
+                }
+            }
+
+            .views {
+
+                .title {
+                    margin-top: 10px;
+
+                }
+
+                .value {
+                    font-size: large;
+                    font-weight: bold;
+                }
+            }
+
+            .subscribers {
+                .title {
+                    margin-top: 10px;
+
+                }
+
+                .value {
+                    font-size: large;
+                    font-weight: bold;
+                }
+            }
+
+            .name {
+                margin-left: 10px;
+
+                .name-box {
+                    margin-top: 10px;
+
+                    .title {
+                        font-size: large;
+                        font-weight: bold;
+                    }
+
+                    .value {
+                    }
+                }
+
+            }
+        }
+
+        .achievement-box {
+            margin-top: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .achievement-title {
+                margin-right: 15px;
+            }
+
+            .edit-profile {
+
+            }
+        }
+
+        .achievement-list {
+            background-color: #1c1c24;
+            width: 100%;
+            height: 180px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .upload-box {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 20px;
+
+            .upload-title {
+                margin-right: 15px;
+            }
+
+            .edit-profile {
+
+            }
+        }
+
+        .videos-scroll-container {
+            overflow: auto;
+            white-space: nowrap;
+
+            .Video {
+                width: 30%;
+                margin: 5px 5px;
+                display: inline-block;
+            }
+        }
+
+        .playlist-box {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 20px;
+
+            .playlist-title {
+                margin-right: 15px;
+            }
+
+            .edit-profile {
+
+            }
+        }
+
+        .playlists-scroll-container {
+            overflow: auto;
+            white-space: nowrap;
+            margin-left: 1px;
+
+            .Video {
+                width: 30%;
+                margin: 5px 5px;
+                display: inline-block;
+            }
+        }
+
+        .userInformation {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                width: 10%;
+            }
+
+            .subscriptions {
+                width: 30%;
+                display: flex;
+                justify-content: left;
+                align-items: start;
+
+                .title {
+                    margin-bottom: 5px;
+                }
+
+                .about {
+                    width: 50%;
+                    padding: 15px;
+                    border-radius: 15px;
+                    background-color: #1c1c24;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
