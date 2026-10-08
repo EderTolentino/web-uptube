@@ -1,0 +1,133 @@
+.App .Home {
+  display: flex;
+  width: 100%;
+  background-color: #13131a;
+
+  .main {
+    width: 74%;
+
+    .suggested_videos {
+      color: white;
+      margin-left: 15px;
+    }
+
+    .videos {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+
+      .Video {
+        width: 48%;
+        margin: 1%;
+      }
+    }
+  }
+
+  .aside {
+    width: 26%;
+
+    .channel_bottom_box{
+      background-color: #2a2a2d;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      .btn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: small;
+      }
+    }
+
+    .channel_header{
+      width: 100%;
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid grey;
+      position: relative;
+      top: 0;
+
+      h3{
+        font-size: medium;
+        margin: 5%;
+
+        .seeAll{
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+
+      .dropdown {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        text-align: right;
+        z-index: 5;
+
+        .dots{
+          background-color: #13131a;
+          color: gray;
+          border: none;
+        }
+
+        .menu {
+          list-style-type: none;
+          margin: 5px 0;
+          padding: 0;
+          position: absolute;
+          right: 20px;
+          border: 1px solid grey;
+          width: 150px;
+
+          //overflow: hidden;
+        }
+
+        .menu > li {
+          margin: 0;
+          background-color: #13131a;
+          color: white;
+        }
+
+        .menu > li:hover {
+          background-color: gray;
+        }
+
+        .menu > li > button {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 5px;
+          margin: 0;
+          font: inherit;
+          cursor: pointer;
+        }
+
+      }
+    }
+    .channel_bottom{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      align-items: baseline;
+      color: grey;
+
+      .follow_channel{
+        margin: 5%;
+      }
+    }
+    .channel_aside{
+      padding: 5%;
+    }
+  }
+}

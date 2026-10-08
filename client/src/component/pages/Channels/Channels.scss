@@ -1,0 +1,26 @@
+.App .Channels {
+  display: flex;
+  width: 100%;
+  background-color: #13131a;
+  overflow:auto;
+
+  .main {
+    width: 100%;
+
+    .video-box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .Video {
+        width: 30%;
+        margin: 10px 0;
+      }
+    }
+
+
+  }
+
+}
