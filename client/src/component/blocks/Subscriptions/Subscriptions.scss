@@ -1,0 +1,33 @@
+.Profile .Subscriptions {
+  width: 100%;
+
+  .channels {
+    width: 100%;
+    margin: 5px 0;
+
+    .channel {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .photo {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+      }
+
+      .channel_name {
+        width: 40%;
+        font-size: 0.8em;
+        padding-left: 10px;
+      }
+
+      .trash {
+        width: 20px;
+      }
+    }
+  }
+}

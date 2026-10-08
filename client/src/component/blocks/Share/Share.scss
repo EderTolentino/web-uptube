@@ -1,0 +1,118 @@
+.App .Share {
+  width: 100%;
+  background-color: #13131a;
+  color: black;
+  font-size: 0.8em;
+  z-index: 20;
+
+
+  .share-type:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+  .share-type:active {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  .share-type {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+
+    .share-icon {
+      margin: 0 5px;
+    }
+
+    .box:hover {
+      cursor: pointer;
+    }
+
+    .box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 0.8em;
+        margin: 0 5px;
+
+        .copy-icon {
+          font-size: 15px;
+        }
+      }
+
+      .text {
+
+      }
+    }
+
+
+  }
+
+  .embed-popup {
+    width: 300px;
+    position: fixed;
+    top: calc(50% - 100px);
+    right: calc(50% - 150px);
+    background-color: darkslategrey;
+    border: 3px solid black;
+    padding: 10px;
+
+    .copy-iframe {
+      text-align: justify;
+    }
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .close:hover, .copy:hover {
+        cursor: pointer;
+      }
+
+      .close:active, .copy:active {
+        background-color: #0d6efd;
+        color: white;
+      }
+
+      .close {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #13131a;
+        color: white;
+      }
+
+
+
+      .copy {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+
+        .text {
+
+        }
+      }
+    }
+  }
+
+
+}

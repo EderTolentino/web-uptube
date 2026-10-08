@@ -1,0 +1,41 @@
+.SetUserAdm {
+  width: 100%;
+
+
+  .user {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+
+    .select-adm {
+      width: 150px;
+      height: 35px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+
+    .user-id {
+      width: 100px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+
+    .user-name {
+      width: 300px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+  }
+}
