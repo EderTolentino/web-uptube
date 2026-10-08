@@ -1,0 +1,22 @@
+# Dependencies and builds
+**/node_modules/
+**/build/
+**/dist/
+**/coverage/
+*.log
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+
+# Session and runtime data
+**/sessions/
+**/uploads/
+**/tmp/
+.DS_Store
