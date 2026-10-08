@@ -2,7 +2,7 @@
 
 **UPTube** is a team-developed academic video platform created as the final project of the **UPSkill programme at ISCTE**.
 
-> **Portfolio restoration in progress.** This repository is being rebuilt from a historical project revision. The application has not yet been re-tested locally, and screenshots and database setup instructions will be added after verification.
+> **Portfolio restoration in progress.** Source code has been restored from a historical project revision into a new repository without the original Git history. The application has not yet been re-tested locally, and screenshots and database setup instructions will be added after verification.
 
 ## Technology stack
 
@@ -24,11 +24,13 @@ server/  Express API and database integration
 
 ## Setup status
 
-Local setup and testing are pending. When the reviewed source files are published, copy `server/.env.example` to `server/.env` and provide your **own** credentials. Do not commit `.env` or session files.
+Local setup and testing are pending. Copy `server/.env.example` to `server/.env` and provide your **own** credentials. Do not commit `.env` or session files.
 
 ## Security
 
 This is a fresh public repository, without the Git history of the original private backup. Historical credentials must be rotated independently; deleting them from the latest source does not revoke them.
+
+The original frontend lockfile was not imported because its contents could not be retrieved completely; run `npm install` in `client/` to regenerate it. The backend lockfile is included.
 
 ## Credits
 
