@@ -1,0 +1,51 @@
+.ReportEvaluation {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .video-player {
+    width: 40%;
+
+    .react-player {
+      width: 80%;
+    }
+  }
+
+  .evaluation {
+    width: 60%;
+
+    .decision {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      .ignore-button:active, .delete-video-button:active, .delete-channel-button:active {
+        background-color: darkblue;
+      }
+
+      .ignore-button:hover, .delete-video-button:hover, .delete-channel-button:hover {
+        cursor: pointer;
+      }
+
+      .ignore-button, .delete-video-button, .delete-channel-button {
+        padding: 8px;
+        border-radius: 15px;
+        margin-left: 20px;
+      }
+
+      .ignore-button {
+        background-color: #0d6efd;
+      }
+
+      .delete-video-button {
+        background-color: orangered;
+      }
+
+      .delete-channel-button {
+        background-color: red;
+      }
+    }
+
+  }
+}
