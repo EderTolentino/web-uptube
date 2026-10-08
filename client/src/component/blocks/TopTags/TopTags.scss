@@ -1,0 +1,20 @@
+.TopTags {
+  color: #b5b5be;
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag:hover {
+      cursor: pointer;
+    }
+    .tag {
+      border: 1px solid #292932;
+      border-radius: 4px;
+      margin: 2px;
+      padding: 1px 2px;
+      cursor: pointer;
+
+    }
+  }
+}

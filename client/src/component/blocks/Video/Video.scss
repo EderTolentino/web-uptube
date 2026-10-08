@@ -1,0 +1,382 @@
+.Video {
+  width: 100%;
+  font-size: 0.8em;
+  background-color: #1c1c24;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 0;
+
+  .wrapper-add-playlist:hover {
+    cursor: pointer;
+  }
+
+  .wrapper-add-playlist {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .playlist-popup {
+      width: 220px;
+      position: fixed;
+      right: calc(50% - 110px);
+      top: calc(50% - 160px);
+      z-index: 50;
+      background-color: #212134;
+      padding: 10px 20px;
+      border-radius: 15px;
+
+      h2 {
+
+      }
+
+
+      .add-playlist-box {
+        width: 100%;
+
+        .create_playlist {
+          width: 100%;
+
+          textarea:focus, input:focus, select:focus {
+            box-shadow: 0 0 0 0;
+            border: 0 none;
+            outline: 0;
+          }
+
+          p {
+            margin: 0;
+          }
+
+          .playlist_name {
+            width: 100%;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: #212134;;
+          }
+
+          .count {
+            text-align: right;
+          }
+
+          .playlist_private {
+            display: block;
+            width: 100%;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: #212134;
+            margin-bottom: 5px;
+          }
+
+          .create-btn:hover {
+            float: right;
+            background-color: dodgerblue;
+            opacity: 0.6;
+          }
+
+          .create-btn {
+            float: right;
+            background-color: #212134;
+            border: none;
+          }
+        }
+      }
+
+      .button-plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+
+
+
+  .cover-box {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    .cover:hover {
+      cursor: pointer;
+    }
+
+    .cover {
+      width: 100%;
+      height: 130px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      .duration {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: black;
+        padding: 1px;
+      }
+
+      .player {
+        width: 35px;
+        height: 40px;
+        position: absolute;
+        bottom: 40%;
+        left: 15px;
+
+        .container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          top: 0;
+
+
+          .book_play{
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          .play{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 7px;
+            left: 8px;
+          }
+        }
+      }
+
+    }
+
+    .photo:hover {
+      cursor: pointer;
+    }
+
+    .photo {
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      bottom: -20px;
+      right: 10px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  }
+
+  .playlist-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3%;
+
+    h1{
+      color: white;
+      font-size: 1em;
+    }
+  }
+
+  .gear:hover {
+    color: white;
+  }
+
+  .gear{
+    color: grey;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3%;
+    position: relative;
+    top: 0;
+
+    .user, .tags {
+      font-size: 1em;
+      margin-bottom: 2px;
+    }
+
+    h1{
+      color: white;
+      font-size: 1em;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    h3{
+      color: grey;
+      font-size: 1em;
+    }
+
+    .setting {
+      display: flex;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+
+      h3:hover {
+        cursor: pointer;
+      }
+
+      h3{
+        color: grey;
+        font-size: 1em;
+        width: 80%;
+      }
+
+
+    }
+  }
+
+  .information {
+    display: flex;
+    color: white;
+    align-items: normal;
+    justify-content: space-between;
+    width: 90%;
+    height: 50px;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid grey;
+    z-index: 1;
+
+    .left {
+      width: 80%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      .comments{
+        display: flex;
+
+        .icons{
+          color: grey;
+          font-size: 20px;
+          margin: 0 3px;
+        }
+
+        h4 {
+          font-size: 1em;
+          color: white;
+        }
+
+      }
+
+      .likes{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5px;
+
+        .icons{
+          color: grey;
+          font-size: 20px;
+          margin: 0 3px;
+        }
+
+        h4 {
+          font-size: 1em;
+          color: white;
+        }
+      }
+    }
+
+
+
+    .add-and-share {
+      width: 20%;
+      display: flex;
+      justify-content: right;
+
+      .add-playlist:hover, .forward-link:hover {
+        cursor: pointer;
+        .icons {
+          color: white;
+        }
+      }
+
+      .add-playlist, .forward-link {
+        .icons{
+          color: grey;
+          font-size: 20px;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .wrapper-share:hover {
+      cursor: pointer;
+    }
+
+    .wrapper-share {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 20;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .share-popup {
+        width: 220px;
+        height: 320px;
+        position: fixed;
+        right: calc(50% - 110px);
+        top: calc(50% - 160px);
+        z-index: 50;
+
+        .share-box {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          top: 0;
+          z-index: 50;
+
+          .Share {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 180px;
+            height: 230px;
+            z-index: 50;
+          }
+        }
+      }
+    }
+
+  }
+}

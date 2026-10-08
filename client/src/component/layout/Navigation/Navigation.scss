@@ -1,0 +1,115 @@
+.App .wrapper .Navigation {
+    height: 100%;
+    font-size: 0.7em;
+
+    .Container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        .user {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 40px;
+            border-radius: 10px;
+            color: whitesmoke;
+            background-color: #151414;
+            border-color: #3d3a3a;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px;
+            margin-top: 5px;
+
+            .userPhoto:hover, .userName, .userCode {
+                cursor: pointer;
+            }
+
+            .userPhoto {
+                width: 30px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+
+            .userData {
+                font-size: 0.8em;
+                padding-left: 3px;
+
+                .userName {
+
+                }
+                .userCode {
+
+                }
+            }
+        }
+
+        .nav-top {
+            width: 100%;
+            .TopTags {
+                padding-left: 20px;
+            }
+        }
+
+        .nav-bottom {
+            width: 100%;
+        }
+
+
+        .nav-top .box, .nav-bottom .box {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            a {
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                padding: 10px 0 10px 20px;
+                color: #717174;
+
+                .icon {
+                    color: #717174;
+                    margin-right: 10px;
+                }
+
+                &.active {
+                    border-left: 3px solid white;
+                    padding-left: 17px;
+                    color: white;
+
+                    .icon {
+                        color: white;
+                    }
+                }
+
+            }
+
+            .logout:hover {
+                cursor: pointer;
+            }
+
+            .logout {
+                width: 100%;
+                height: 100%;
+                padding: 10px 0 10px 20px;
+                color: #717174;
+
+                .icon {
+                    margin-right: 10px;
+                    color: #717174;
+                }
+            }
+        }
+
+    }
+}
+
+.hideNavigation{
+    display: none;
+}

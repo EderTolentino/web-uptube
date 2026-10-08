@@ -1,0 +1,222 @@
+.App .wrapper{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #1c1c24;
+  color: white;
+
+  .UploadVideo {
+    width: 60%;
+    height: calc(90vh - 100px);
+    margin: auto;
+    background-color: #1c1c24;
+    color: white;
+    border-radius: 5%;
+
+
+    .input-error {
+      outline: 0;
+      border: 1px solid red;
+      background-color: #eacccc;
+      color: #7a0000;
+    }
+
+    .upload-box {
+      //padding-top: 5%;
+
+
+      .container_upload {
+        //margin: auto;
+        margin: 20px;
+
+
+        .content_1 {
+          //padding: 25px 25px 5px;
+          display: flex;
+          justify-content: space-between;
+
+
+          .left{
+            text-align: left;
+            padding-left: 25px;
+          }
+
+          .right{
+            text-align: right;
+            .fingerPrint{
+              margin-right: 20px;
+            }
+
+            .text_Video{
+              padding-right: 10px;
+            }
+
+            .ID_Video{
+              background-color: black;
+              border-radius: 5px;
+              height: 50px;
+              font-size: inherit;
+              font-style: inherit;
+              color: grey;
+              padding-left: 10px;
+              padding-right: 10px;
+
+            }
+          }
+        }
+
+        .content_2{
+          padding-left: 25px;
+          //padding-bottom: 25px;
+          color: grey;
+          p{
+            margin: 0
+          }
+        }
+
+        .content_3 {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3px;
+
+          .choose_cover {
+            width: 22%;
+            height: 20px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid #000;
+            align-items: center;
+          }
+
+          .not_chosen {
+            border: none;
+            color: #1c1c24;
+          }
+        }
+
+        .content_4 {
+          display: flex;
+          justify-content: space-between;
+
+          .choose_thumbnail {
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin: 20px;
+          }
+
+          .showBox {
+            position: relative;
+            display: inline-block;
+
+            .tooltiptext {
+              visibility: hidden;
+              width: 80%;
+              background-color: #1c1c24;
+              color: grey;
+              text-align: center;
+              padding: 5px;
+              margin-bottom: 8px;
+              border-radius: 40px;
+              border: 1px solid rgba(73, 73, 73, 0.35);
+              font-size: small;
+
+
+              /* Position the tooltip text - see examples below! */
+              position: absolute;
+              z-index: 1;
+
+              bottom: calc(100% + 6px);
+              left: 50%;
+              margin-left: -40%; /* Use half of the width (80%/2 = 40%), to center the tooltip */
+            }
+
+            .tooltiptext::after {
+              content: " ";
+              position: absolute;
+              top: 100%; /* At the bottom of the tooltip */
+              left: 50%;
+              margin-left: -5px;
+              border-width: 10px;
+              border-style: solid;
+              border-color: rgba(73, 73, 73, 0.35) transparent transparent transparent;
+            }
+
+            /* Show the tooltip text when you mouse over the tooltip container */
+            &:hover .tooltiptext {
+              visibility: visible;
+            }
+          }
+
+          .chosen_thumb {
+            border: 3px solid #0d6efd;
+          }
+
+        }
+
+        .primeiro_form{
+          padding-left: 25px;
+          width: 250px;
+
+          .mb-3{
+            background-color: black;
+            //border-color: black;
+            width: 100%;
+            color: white;
+          }
+        }
+
+      }
+
+      .segundo_form{
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 80px;
+        margin-bottom: 0;
+
+        .mb-3{
+          background-color: black;
+          border-color: black;
+          width: 100%;
+          color: white;
+          height: 100%;
+        }
+      }
+
+      .Dados_video{
+        padding-left: 25px;
+        padding-bottom: 20px;
+      }
+
+      .contagem{
+        padding-right: 25px;
+        text-align: end;
+      }
+
+      .tag-send {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button-box{
+          padding-top: 5px;
+          padding-right: 25px;
+          text-align: end;
+        }
+
+        .button {
+          background-color: #047ee7;
+          height: 40px;
+          border-radius: 40px;
+          font-size: inherit;
+          font-style: inherit;
+          color: white;
+          margin-top: 20px;
+        }
+      }
+
+
+    }
+  }
+}

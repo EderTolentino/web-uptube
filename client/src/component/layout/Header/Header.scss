@@ -1,0 +1,229 @@
+.Header {
+  width: 100%;
+  display: flex;
+  background-color: #1c1c24;
+  position: relative;
+  top: 0;
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo-img {
+      width: 120px;
+      height: 50%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .container_input {
+    width: 62%;
+    margin: 1.5em 0%;
+    display: flex;
+
+    .search {
+      width: 90%;
+      padding: 10px 1%;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top: 1px solid #3d3a3a;
+      border-left: 1px solid #3d3a3a;
+      border-bottom: 1px solid #3d3a3a;
+      background-color: #151414;
+      color: #b5b5be;
+
+      &:focus {
+        outline-width: 0;
+      }
+    }
+
+    .button {
+      position: relative;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      border-top: 1px solid #3d3a3a;
+      border-right: 1px solid #3d3a3a;
+      border-bottom: 1px solid #3d3a3a;
+      margin-left: -2%;
+      background-color: #151414;
+
+      .icon:hover {
+        cursor: pointer;
+      }
+
+      .icon {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        color: #605f5f;
+      }
+    }
+  }
+
+  .wrapper-notification {
+    width: 95vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+
+  .wrapper-notification:hover {
+    cursor: pointer;
+  }
+
+  .wrapper-notification {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .notification-box {
+      max-height: calc(80vh - 100px);
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      z-index: 20;
+
+
+      h2 {
+        color: #3d3a3a;
+        background-color: darkgrey;
+        margin-bottom: 0;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .notifications-scroll-container {
+        max-height: calc(80vh - 100px);
+        overflow: auto;
+      }
+    }
+  }
+
+
+
+
+  .session {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+
+
+    .user {
+      width: 100%;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      padding-right: 15px;
+
+      .notification:hover {
+        cursor: pointer;
+      }
+
+      .notification {
+        position: relative;
+        top: 0;
+        margin: 0 15px;
+
+        .icon {
+          font-size: 20px;
+          color: grey;
+        }
+
+        .notification-sign {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+
+
+      .userPhoto {
+        cursor: pointer;
+      }
+
+      .userPhoto {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+      }
+    }
+
+    .noUser:hover {
+      cursor: pointer;
+    }
+
+    .noUser {
+      width: 130px;
+      font-size: 0.8em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #0d6efd;
+      padding: 5px;
+
+      span {
+
+      }
+
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 3px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          height: 15px;
+          color: white;
+        }
+      }
+
+    }
+  }
+}
+
+.hideHeader{
+  display: none;
+}
