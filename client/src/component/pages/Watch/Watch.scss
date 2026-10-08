@@ -1,0 +1,328 @@
+.App .Watch {
+  display: flex;
+  width: 100%;
+  background-color: #13131a;
+  overflow:auto;
+
+
+  .main {
+    width: 74%;
+    padding: 20px;
+
+    .screen {
+      width: 100%;
+
+      .react-player {
+        border-radius: 15px;
+
+      }
+    }
+
+    .videoInfo {
+
+      .tags {
+        text-decoration: none;
+        font-size: 1em;
+      }
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          font-size: 1.2em;
+        }
+
+        .icons-box {
+          display: flex;
+          justify-content: right;
+          align-items: center;
+
+          .forward-link:active, .flag:active {
+            color: #0d6efd;
+          }
+
+          .forward-link:hover, .flag:hover {
+            cursor: pointer;
+            color: white;
+          }
+
+          .forward-link {
+            color: #575762;
+          }
+
+          .flag {
+            color: #575762;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .wrapper-share {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .share-popup {
+          width: 220px;
+          height: 320px;
+          position: fixed;
+          right: calc(50% - 110px);
+          top: calc(50% - 160px);
+          z-index: 20;
+        }
+      }
+
+
+
+      .wrapper-report {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .RadioReport {
+          background-color: #251b1b;
+          width: 300px;
+          position: fixed;
+          right: calc(50% - 150px);
+          top: calc(50% - 160px);
+          z-index: 20;
+        }
+      }
+
+
+      .container_channel {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        .photo:hover {
+          cursor: pointer;
+        }
+
+        .photo {
+          width: 80px;
+          height: 80px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+
+        .data {
+          width: calc(100% - 80px);
+          padding-left: 20px;
+
+          .channel {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .user-name:hover {
+              cursor: pointer;
+            }
+
+            .button:active {
+              background-color: #0d6efd;
+              color: white;
+            }
+
+            .button:hover {
+              cursor: pointer;
+            }
+
+            .button {
+              font-size: 1em;
+              border: 1px solid #292932;
+              border-radius: 5px;
+              padding: 3px 7px;
+              margin-left: 15px;
+            }
+          }
+
+
+          .wrapper-subscription {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 20;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .buttons {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              .cancel {
+                background-color: dodgerblue;
+                padding: 5px;
+                border-radius: 15px;
+                text-align: center;
+                width: 150px;
+                margin-right: 15px;
+              }
+
+              .send {
+                background-color: red;
+                padding: 5px;
+                border-radius: 15px;
+                text-align: center;
+                width: 150px;
+                margin-left: 15px;
+              }
+            }
+          }
+
+          .interaction {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .views {
+
+              h3 {
+                color: #575762;
+                font-size: 1em;
+              }
+            }
+
+          }
+        }
+      }
+
+
+
+
+      .container_comment {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        margin-top: 20px;
+
+        .photo {
+          width: 80px;
+          height: 80px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+
+        .data {
+          width: calc(100% - 80px);
+          padding-left: 20px;
+
+          .channel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .name {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+
+              h3 {
+                font-size: 1em;
+              }
+
+              .date {
+                color: #575762;
+                margin-left: 15px;
+              }
+            }
+
+
+
+            .edit_button:hover {
+              background-color: #1c1c24;
+            }
+
+            .edit_button {
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+
+              .menu-btn {
+                width: 23.5px;
+                height: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+              }
+            }
+          }
+
+          .comment {
+            text-align: justify;
+          }
+        }
+      }
+
+
+
+
+
+
+    }
+  }
+
+  .aside {
+    width: 26%;
+
+    .playlist, .videos {
+      padding: 0 5px;
+
+      .playlist-playing, .videos-playing {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Video {
+          width: 100%;
+          margin: 5px 0;
+
+        }
+      }
+    }
+
+
+
+  }
+}
+

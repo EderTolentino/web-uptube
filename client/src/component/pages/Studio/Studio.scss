@@ -1,0 +1,19 @@
+.App .Studio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13131a;
+
+    .window_upload{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+
+        .DragArea {
+
+        }
+    }
+}

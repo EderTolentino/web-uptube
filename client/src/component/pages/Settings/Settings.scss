@@ -1,0 +1,110 @@
+.App .Settings {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #13131a;
+  overflow: auto;
+
+  .main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+
+
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .inputContainer {
+      margin-left: 20px;
+
+      .fotoCapa {
+        margin-left: 10px;
+      }
+
+      .fotoPerfil {
+        margin-left: 10px;
+      }
+
+      .textoNome {
+        margin-left: 45px;
+      }
+      .textosobre{
+        margin-left: 5px;
+      }
+    }
+    }
+
+    button {
+      background-color: #0d6efd;
+      margin: 20px 0 0 20px;
+      color:white;
+      border-radius: 15px;
+      width: 150px;
+      height:30px
+
+    }
+
+    .delete-profile {
+      margin-left: 20px;
+      margin-bottom: 30px;
+
+      .delete {
+        background-color: red;
+        padding: 2px;
+        border-radius: 15px;
+        text-align: center;
+        width: 150px;
+        height: 30px;
+
+
+      }
+    }
+
+    .send_area {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 20;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        .buttons-box {
+          display: flex;
+          flex-direction: row;
+
+
+          .cancel {
+            background-color: dodgerblue;
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            width: 150px;
+            margin-right: 15px;
+          }
+
+          .send {
+            background-color: red;
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            width: 150px;
+            margin-left: 15px;
+          }
+
+        }
+      }
+    }
+  }
