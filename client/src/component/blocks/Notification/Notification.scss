@@ -1,0 +1,109 @@
+.Notification:hover {
+  cursor: pointer;
+}
+
+.Notification {
+  width: 400px;
+  height:65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  z-index: 20;
+  font-size: 0.8em;
+  background-color: #151414;
+  border-radius: 5px;
+  color: grey;
+  border-color: #3d3a3a;
+  border-style: solid;
+  border-width: 1px;;
+
+  .photo {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-left: 5px;
+  }
+
+  .data {
+    width: calc(100% - 115px);
+    padding: 8px;
+
+    .channel {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 0;
+
+      .name {
+        width: 100%;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        .date {
+          color: #575762;
+        }
+      }
+    }
+  }
+
+  .edit_button {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+    .btn-box:hover {
+      background-color: #1c1c24;
+    }
+
+    .btn-box {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: darkslategrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .menu-btn {
+        width: 23.5px;
+        height: 23.5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          color: black;
+        }
+
+      }
+    }
+
+
+    .delete_edit {
+      width: 160px;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+      padding: 5px;
+      text-align: center;
+      background-color: grey;
+      color:black
+    }
+  }
+
+
+}
